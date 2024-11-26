@@ -1,0 +1,49 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment directories
+venv/
+env/
+*.venv
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variable files
+*.env
+*.secret
+config.json
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+*.out
+
+# Compiled C extensions
+*.so
+
+# MyPy and test cache
+.mypy_cache/
+.pytest_cache/
+
+# Database files
+*.sqlite3
+*.db
+
+# Large file storage
+*.lfs
+
+#env
+.env
