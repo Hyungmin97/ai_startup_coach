@@ -13,14 +13,15 @@ from dotenv import load_dotenv
 st.set_page_config(page_title="AI 창업 어시스턴트", page_icon="😎")
 st.title("😎AI 창업 어시스턴트😎")
 
-# .env 파일 로드
-load_dotenv()
+# OpenAI API 키 가져오기
+# # .env 파일 로드
+# load_dotenv()
 
-# API 키 설정
-api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
-    st.error("API 키가 설정되지 않았습니다. .env 파일을 확인하세요.")
-os.environ["OPENAI_API_KEY"] = api_key
+# # API 키 설정
+# api_key = os.getenv("OPENAI_API_KEY")
+# if not api_key:
+#     st.error("API 키가 설정되지 않았습니다. .env 파일을 확인하세요.")
+# os.environ["OPENAI_API_KEY"] = api_key
 
 
 if "messages" not in st.session_state:
