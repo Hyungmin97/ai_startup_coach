@@ -19,8 +19,11 @@ st.set_page_config(page_title="AI 창업 어시스턴트", page_icon="😎")
 st.title("😎AI 창업 어시스턴트😎")
 
 # OpenAI API 키 가져오기
-OPENAI_API_KEY = ''
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+# .env 파일 로드
+load_dotenv()
+
+# 환경 변수 가져오기
+api_key = os.getenv("OPENAI_API_KEY")
 
 # Streamlit 세션 상태 초기화
 if "messages" not in st.session_state:
